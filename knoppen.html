@@ -4,12 +4,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ilhan | Knoppen</title>
     <style>
-        .button {
+        @import url(https://fonts.googleapis.com/css?family=Pacifico);
+        @import url('https://fonts.googleapis.com/css?family=Anton');
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes regenboog {
+          0%{color: orange;}	
+          10%{color: purple;}	
+            20%{color: red;}
+          30%{color: CadetBlue;}
+            40%{color: yellow;}
+          50%{color: coral;}
+            60%{color: green;}
+          70%{color: cyan;}
+          80%{color: DeepPink;}
+          90%{color: DodgerBlue;}
+            100%{color: orange;}
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes regenboog {
+           0%{color: orange;}	
+          10%{color: purple;}	
+            20%{color: red;}
+          30%{color: CadetBlue;}
+            40%{color: yellow;}
+          50%{color: coral;}
+            60%{color: green;}
+          70%{color: cyan;}
+          80%{color: DeepPink;}
+          90%{color: DodgerBlue;}
+            100%{color: orange;}
+        }
+
+        /* Standar Syntax */
+        @keyframes regenboog {
+            0%{color: orange;}	
+          10%{color: purple;}	
+            20%{color: red;}
+          30%{color: CadetBlue;}
+            40%{color: yellow;}
+          50%{color: coral;}
+            60%{color: green;}
+          70%{color: cyan;}
+          80%{color: DeepPink;}
+          90%{color: DodgerBlue;}
+            100%{color: orange;}
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background: no-repeat 100%;
+            background-image: url("https://media0.giphy.com/media/72DtXz1K8PTOw/source.gif");
+        }
+        /* Ik wou eerst JS gebruiken maar css is makkelijker */
+        .regenboog {
+            color:rgba(100, 50, 255, .8);
             position: relative;
             background-color: #ba12c9;
             border: none;
             font-size: 28px;
-            color: #FFFFFF;
             padding: 20px;
             width: 200px;
             text-align: center;
@@ -18,18 +72,34 @@
             text-decoration: none;
             overflow: hidden;
             cursor: pointer;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 2px 2px 4px #000000;
+            font-size:40px;
+
+            /* Chrome, Safari, Opera */
+            -webkit-animation: regenboog 5s infinite; 
+
+            /* Internet Explorer / Edge */
+            -ms-animation: regenboog 5s infinite;
+
+            /* Standar Syntax */
+            animation: regenboog 5s infinite; 
         }
         
-        .button:hover {
-            background-color: #db12c9;
+        .regenboog:hover {
+            background-color: RED;
+            text-decoration: none;
+            color: lawngreen;
         }
 
-        .button:active:after {
+        .regenboog:active:after {
             padding: 0;
             margin: 0;
             opacity: 1;
-            transition: 0s
+            transition: 0s;
+            text-decoration: none;
         }
+        
 
         a {
             font-family: sans-serif;
@@ -38,8 +108,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
               <a class="navbar-brand" href="/">Ilhan Temel</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,16 +140,16 @@
                   </li>
                 </ul>
               </div>
-        </nav>
+    </nav>
     <h2 style="margin-top: 60px; margin-bottom: 30px;">Handige knoppen</h2>
 
-    <a href="afbeeldingen.html" style="margin-top: 20px; margin-right: 20px;" class="button">Afbeeldingen</button>
+    <a href="afbeeldingen.html" style="margin-top: 20px; margin-right: 20px;" class="regenboog">Afbeeldingen</button>
 
-    <a href="index.html" style="margin-top: 20px;" class="button">Terug naar hoofdpagina</a>
+    <a href="index.html" style="margin-top: 20px;" class="regenboog">Terug naar hoofdpagina</a>
 
-       <br>  <br> <br> <br> <br> 
+       <br>  <br> <br> <br> <br> <br><br><br><br><br><br>
 
-    <a href="afbeelding.html">Afbeeldingen</a>    
+    <a href="afbeeldingen.html">Afbeeldingen</a>    
     <br> 
     <a href="index.html">Terug naar hoofdpagina</a>
         <!-- Bootstrap javascript import for functionality -->
