@@ -31,10 +31,70 @@
             #about h1:hover {
                 color: RED;
             }
+            
+            @import url(https://fonts.googleapis.com/css?family=Pacifico);
+            @import url('https://fonts.googleapis.com/css?family=Anton');
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes body {
+              0%{background-color: orange;}	
+              10%{background-color: purple;}	
+                20%{background-color: red;}
+              30%{background-color: CadetBlue;}
+                40%{background-color: yellow;}
+              50%{background-color: coral;}
+                60%{background-color: green;}
+              70%{background-color: cyan;}
+              80%{background-color: DeepPink;}
+              90%{background-color: DodgerBlue;}
+                100%{background-color: orange;}
+            }
+
+            /* Internet Explorer */
+            @-ms-keyframes body {
+               0%{background-color: orange;}	
+              10%{background-color: purple;}	
+                20%{background-color: red;}
+              30%{background-color: CadetBlue;}
+                40%{background-color: yellow;}
+              50%{background-color: coral;}
+                60%{background-color: green;}
+              70%{background-color: cyan;}
+              80%{background-color: DeepPink;}
+              90%{background-color: DodgerBlue;}
+                100%{background-color: orange;}
+            }
+
+            /* Standar Syntax */
+            @keyframes body {
+                0%{background-color: orange;}	
+              10%{background-color: purple;}	
+                20%{background-color: red;}
+              30%{background-color: CadetBlue;}
+                40%{background-color: yellow;}
+              50%{background-color: coral;}
+                60%{background-color: green;}
+              70%{background-color: cyan;}
+              80%{background-color: DeepPink;}
+              90%{background-color: DodgerBlue;}
+                100%{background-color: orange;}
+            }
+            
+            body {
+                /* Chrome, Safari, Opera */
+                -webkit-animation: body 5s infinite; 
+
+                /* Internet Explorer / Edge */
+                -ms-animation: body 5s infinite;
+
+                /* Standar Syntax */
+                animation: body 5s infinite; 
+            }
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="main">
+                    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
               <a class="navbar-brand" href="/">Ilhan Temel</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -76,6 +136,7 @@
             <h1>Stem</h1>
             <!-- -10px want anders is er te veel plaats tussen de header -->
             <p style="margin-top: -10px;">STEM is een opleiding gebaseerd wetenschappen en technology.<br></p>
+        </div>
         </div>
         
         <!-- Bootstrap javascript import for functionality -->
